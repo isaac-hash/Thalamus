@@ -87,9 +87,9 @@ model = DistributedMamba(input_dim=2, workspace_dim=32).to("cuda")
 output, weights = model(input_tensor)
 
 ```
-![alt text](image.png)
+![alt text](WSA.png)
 
-![alt text](image-1.png)
+![alt text](image.png)
 ---
 
 ## **Research Roadmap**
