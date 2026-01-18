@@ -87,9 +87,17 @@ model = DistributedMamba(input_dim=2, workspace_dim=32).to("cuda")
 output, weights = model(input_tensor)
 
 ```
-![alt text](WSA.png)
+## **Workspace Dynamics & Expert Allocation**
 
-![alt text](image.png)
+Below are the visualization results from the verification run.
+
+### **1. Expert Attention Allocation**
+![Workspace Allocation](WSA.png)
+*This plot demonstrates the dynamic routing of the Global Workspace. The colored regions represent the relative attention weight assigned to the Visual (blue) and Semantic (green) expert modules over time. The allocation shifts as the model processes the mixed-modality input.*
+
+### **2. Fatigue-Driven Switching**
+![Fatigue Mechanism](image.png)
+*This figure illustrates the effect of the fatigue mechanism. As a module dominates the workspace, its "fatigue" accumulates, eventually suppressing its signal and allowing other modules to take over, preventing single-mode collapse.*
 ---
 
 ## **Research Roadmap**
