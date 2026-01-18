@@ -97,6 +97,7 @@ Below are the visualization results from the verification run.
 
 ### **2. Fatigue-Driven Switching**
 ![Fatigue Mechanism](image.png)
+
 *This figure illustrates the effect of the fatigue mechanism. As a module dominates the workspace, its "fatigue" accumulates, eventually suppressing its signal and allowing other modules to take over, preventing single-mode collapse.*
 ---
 
